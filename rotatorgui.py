@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python3
 #
 #   ROTCTLD Basic Web GUI
 #
@@ -65,9 +65,9 @@ class ROTCTLD(object):
         """ Send a command to the connected rotctld instance,
             and return the return value.
         """
-        self.sock.sendall(command+'\n')
+        self.sock.sendall((command+'\n').encode('utf-8'))
         try:
-            return self.sock.recv(1024)
+            return self.sock.recv(1024).decode('utf-8')
         except:
             return None
 
