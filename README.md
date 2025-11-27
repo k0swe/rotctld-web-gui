@@ -8,12 +8,12 @@ It is in no way polished, and likely has some interesting bugs (particulatly if 
 
 
 ## Dependencies
-* Python (2.7, until I fix things)
+* Python 3
 * Python Modules: flask, flask-socketio  (can obtain using pip)
 
 ## Usage:
 * Start rotctld (refer rotctld documentation)
-* `python rotatorgui.py`
+* `python3 rotatorgui.py`
 * Navigate to http://localhost:5001/   (or equivalent IP)
 
-Run `python rotatorgui.py --help` for command line options:
+Run `python3 rotatorgui.py --help` for command line options:
